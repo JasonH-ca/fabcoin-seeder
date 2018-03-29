@@ -400,8 +400,8 @@ extern "C" void* ThreadStats(void*) {
   return nullptr;
 }
 
-static const string mainnet_seeds[] = {"dnsseed.fabexplorer.info", ""};
-static const string testnet_seeds[] = {"testnet-seed.fabexplorer.info", , ""};
+static const string mainnet_seeds[] = {"dnsseed.fabnetwork.info", ""};
+static const string testnet_seeds[] = {"testnet-seed.fabexplorer.info", ""};
 static const string *seeds = mainnet_seeds;
 
 extern "C" void* ThreadSeeder(void*) {
