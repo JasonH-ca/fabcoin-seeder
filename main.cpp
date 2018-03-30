@@ -401,12 +401,12 @@ extern "C" void* ThreadStats(void*) {
 }
 
 static const string mainnet_seeds[] = {"dnsseed.fabnetwork.info", ""};
-static const string testnet_seeds[] = {"testnet-seed.fabexplorer.info", ""};
+static const string testnet_seeds[] = {"testnet-seed.fabnetwork.info", ""};
 static const string *seeds = mainnet_seeds;
 
 extern "C" void* ThreadSeeder(void*) {
   if (!fTestNet){
-    db.Add(CService("kjy2eqzk4zwi5zd3.onion", 8665), true);
+    db.Add(CService("vps.fabnetwork.info", 8665), true);
   }
   do {
     for (int i=0; seeds[i] != ""; i++) {
