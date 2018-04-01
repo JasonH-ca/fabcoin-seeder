@@ -408,6 +408,10 @@ extern "C" void* ThreadSeeder(void*) {
   if (!fTestNet){
     db.Add(CService("vps.fabnetwork.info", 8665), true);
   }
+  else
+  {
+    db.Add(CService("vps.fabtest.net", 18665), true); 
+  }
   do {
     for (int i=0; seeds[i] != ""; i++) {
       vector<CNetAddr> ips;
