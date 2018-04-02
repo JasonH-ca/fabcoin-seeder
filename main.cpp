@@ -406,11 +406,11 @@ static const string *seeds = mainnet_seeds;
 
 extern "C" void* ThreadSeeder(void*) {
   if (!fTestNet){
-    db.Add(CService("vps.fabnetwork.info", 8665), true);
+    db.Add(CService("vps.fabnetwork.info", 8665,true), true);
   }
   else
   {
-    db.Add(CService("vps.fabtest.net", 18665), true); 
+    db.Add(CService("vpstest.fabnetwork.info", 18665,true), true); 
   }
   do {
     for (int i=0; seeds[i] != ""; i++) {
