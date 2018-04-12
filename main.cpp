@@ -400,7 +400,7 @@ extern "C" void* ThreadStats(void*) {
   return nullptr;
 }
 
-static const string mainnet_seeds[] = {"dnsseed.fabnetwork.info", ""};
+static const string mainnet_seeds[] = {"dnsseed.fabnetwork.info","dnsseed.fabcoin.club","dnsseed1.fabcoin.club","dnsseed.fabcoin.biz",""};
 static const string testnet_seeds[] = {"testnet-seed.fabnetwork.info", ""};
 static const string *seeds = mainnet_seeds;
 
