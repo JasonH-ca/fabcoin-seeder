@@ -400,13 +400,13 @@ extern "C" void* ThreadStats(void*) {
   return nullptr;
 }
 
-static const string mainnet_seeds[] = {"dnsseed.fabnetwork.info","dnsseed.fabcoin.club","dnsseed1.fabcoin.club","dnsseed.fabcoin.biz",""};
+static const string mainnet_seeds[] = {"dnsseed.fabcoin.club","dnsseed1.fabcoin.club","dnsseed.fabcoin.biz",""};
 static const string testnet_seeds[] = {"testnet-seed.fabnetwork.info", ""};
 static const string *seeds = mainnet_seeds;
 
 extern "C" void* ThreadSeeder(void*) {
   if (!fTestNet){
-    db.Add(CService("vps.fabnetwork.info", 8665,true), true);
+    db.Add(CService("kjy2eqzk4zwi5zd3.onion", 8665), true);
   }
   else
   {
